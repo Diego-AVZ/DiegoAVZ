@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diego Álvarez de la Villa — Blockchain Engineer</title>
+  <meta name="description" content="Curriculum vitae of Diego Álvarez de la Villa, blockchain engineer, DeFi protocol architect and smart contract engineer in Madrid.">
+  <meta name="theme-color" content="#F3F1EB">
+  <link rel="canonical" href="https://diego-avz.github.io/DiegoAVZ/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231C1915'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-family='Georgia,serif' font-size='12' fill='%23F3F1EB'%3EDA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #F3F1EB;
+      --ink: #1C1915;
+      --soft: #313833;
+      --muted: #4C534C;
+      --line: #D2CDC2;
+      --accent: #1E4636;
+      --sans: "IBM Plex Sans", "Segoe UI", sans-serif;
+      --serif: "Newsreader", Georgia, "Times New Roman", serif;
+      --mono: "IBM Plex Mono", "Cascadia Mono", ui-monospace, monospace;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 16.5px;
+      line-height: 1.55;
+      text-rendering: optimizeLegibility;
+    }
+
+    ::selection { background: #D5E3D8; color: var(--ink); }
+
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    .skip {
+      position: absolute;
+      left: 12px;
+      top: -40px;
+      background: var(--ink);
+      color: var(--paper);
+      padding: 8px 12px;
+      z-index: 5;
+    }
+
+    .skip:focus { top: 12px; }
+
+    .sheet {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 36px 32px 96px;
+    }
+
+    .pdf-btn {
+      position: fixed;
+      z-index: 6;
+      right: 18px;
+      bottom: 18px;
+      border: 1px solid var(--ink);
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--mono);
+      font-size: 11.5px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 11px 14px;
+      cursor: pointer;
+    }
+
+    .pdf-btn:hover {
+      background: var(--ink);
+      color: var(--paper);
+    }
+
+    .mast {
+      border-top: 3px solid var(--ink);
+      border-bottom: 3px solid var(--ink);
+    }
+
+    .mast-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 10px 0 12px;
+      border-bottom: 1px solid var(--ink);
+      font-family: var(--mono);
+      font-size: 11.5px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 22px 0 0;
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: clamp(42px, 6vw, 68px);
+      line-height: 0.96;
+      letter-spacing: -0.025em;
+    }
+
+    .roles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2px 0;
+      margin: 16px 0 0;
+      font-size: 16.5px;
+      line-height: 1.45;
+      color: var(--soft);
+    }
+
+    .roles span { white-space: nowrap; }
+
+    .roles span:not(:last-child)::after {
+      content: "  ·  ";
+      color: var(--muted);
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 20px;
+      margin: 16px 0 0;
+      padding: 0 0 20px;
+      list-style: none;
+      font-size: 14.5px;
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-underline-offset: 3px;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      border-top: 1px solid var(--ink);
+    }
+
+    .metrics li {
+      padding: 14px 16px 16px 0;
+      min-width: 0;
+    }
+
+    .metrics li + li {
+      padding-left: 16px;
+      border-left: 1px solid var(--line);
+    }
+
+    .metrics strong {
+      display: block;
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: 28px;
+      white-space: nowrap;
+      line-height: 1;
+      letter-spacing: -0.03em;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .metrics span {
+      display: block;
+      margin-top: 7px;
+      font-size: 12.5px;
+      line-height: 1.35;
+      color: var(--soft);
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 176px minmax(0, 1fr);
+      gap: 52px;
+      align-items: start;
+      margin-top: 36px;
+    }
+
+    .toc {
+      position: sticky;
+      top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .toc button {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      width: 100%;
+      padding: 7px 0;
+      border: 0;
+      border-bottom: 1px solid transparent;
+      background: none;
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 11.5px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .toc button.is-active {
+      color: var(--ink);
+      border-bottom-color: var(--ink);
+    }
+
+    main { min-width: 0; }
+
+    section { scroll-margin-top: 24px; }
+
+    section + section { margin-top: 56px; }
+
+    .section-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--ink);
+    }
+
+    h2 {
+      margin: 0;
+      font-family: var(--sans);
+      font-size: 12.5px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    h2 .idx {
+      margin-right: 8px;
+      color: var(--muted);
+      font-family: var(--mono);
+      font-weight: 400;
+      letter-spacing: 0.08em;
+    }
+
+    .lead,
+    .prose p {
+      margin: 0;
+      max-width: 68ch;
+    }
+
+    .prose { margin-top: 12px; }
+
+    .prose p + p { margin-top: 12px; }
+
+    .text-btn,
+    summary {
+      font-family: var(--mono);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .text-btn {
+      border: 0;
+      background: none;
+      padding: 8px 0;
+      cursor: pointer;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    details { margin-top: 12px; }
+
+    summary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 44px;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+
+    summary::before {
+      content: "+";
+      font-weight: 500;
+    }
+
+    details[open] > summary::before { content: "–"; }
+
+    .when-open { display: none; }
+
+    details[open] .when-closed { display: none; }
+
+    details[open] .when-open { display: inline; }
+
+    details[open] .n { display: none; }
+
+    .n { color: var(--muted); }
+
+    .role + .role {
+      margin-top: 26px;
+      padding-top: 26px;
+      border-top: 1px solid var(--line);
+    }
+
+    .role.is-notable {
+      box-shadow: inset 2px 0 0 var(--accent);
+      padding-left: 16px;
+    }
+
+    .role-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 8px 28px;
+      align-items: baseline;
+    }
+
+    h3 {
+      margin: 0;
+      font-family: var(--serif);
+      font-size: 28px;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    .role-title {
+      margin: 4px 0 0;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--soft);
+    }
+
+    .when {
+      margin: 0;
+      text-align: right;
+      font-family: var(--mono);
+      font-size: 12px;
+      letter-spacing: 0.02em;
+      font-variant-numeric: tabular-nums;
+      color: var(--soft);
+    }
+
+    .now { color: var(--accent); font-weight: 500; }
+
+    .mode {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+    }
+
+    .context {
+      margin: 10px 0 0;
+      max-width: 62ch;
+    }
+
+    .signals {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+      margin: 10px 0 0;
+      padding: 0;
+      list-style: none;
+      max-width: 70ch;
+    }
+
+    .signals li {
+      font-family: var(--mono);
+      font-size: 12.5px;
+      line-height: 1.6;
+      color: var(--ink);
+    }
+
+    .signals li:not(:last-child)::after {
+      content: "  ·  ";
+      color: var(--muted);
+    }
+
+    .points {
+      margin: 14px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .points li {
+      position: relative;
+      margin: 0 0 8px;
+      padding-left: 16px;
+      max-width: 70ch;
+    }
+
+    .points li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.72em;
+      width: 7px;
+      height: 1px;
+      background: var(--ink);
+    }
+
+    .skill-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px 48px;
+    }
+
+    .skill-grid > section { margin-top: 0; }
+
+    .skill-grid h3 {
+      font-family: var(--sans);
+      font-size: 14.5px;
+      font-weight: 600;
+      letter-spacing: 0;
+      margin: 0 0 8px;
+    }
+
+    .plain {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .plain li {
+      padding: 5px 0;
+      border-top: 1px solid var(--line);
+      font-size: 14.5px;
+    }
+
+    .cols {
+      columns: 2;
+      column-gap: 48px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .cols li {
+      break-inside: avoid;
+      padding: 8px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .langs { margin: 0; padding: 0; list-style: none; max-width: 460px; }
+
+    .langs li {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 10px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .langs span:last-child {
+      font-family: var(--mono);
+      font-size: 12.5px;
+      color: var(--soft);
+    }
+
+    .colophon {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 8px 20px;
+      margin-top: 64px;
+      padding-top: 14px;
+      border-top: 3px solid var(--ink);
+      font-family: var(--mono);
+      font-size: 11.5px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .colophon a { color: var(--accent); text-decoration: none; }
+
+    .sr {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (max-width: 900px) {
+      .metrics { grid-template-columns: 1fr 1fr; }
+      .metrics li {
+        border-top: 1px solid var(--line);
+        padding: 12px 12px;
+      }
+      .metrics li + li { border-left: 0; padding-left: 12px; }
+      .metrics li:nth-child(-n + 2) { border-top: 0; }
+      .metrics li:nth-child(even) { border-left: 1px solid var(--line); }
+      .metrics li:last-child:nth-child(odd) { grid-column: 1 / -1; border-left: 0; }
+    }
+
+    @media (max-width: 800px) {
+      .pdf-btn {
+        position: static;
+        display: block;
+        width: max-content;
+        margin: 12px 18px 0 auto;
+      }
+      .sheet { padding: 8px 18px 36px; }
+      .layout { display: block; margin-top: 22px; }
+      .toc {
+        position: sticky;
+        top: 0;
+        z-index: 3;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0 16px;
+        overflow: visible;
+        margin: 0 -18px 8px;
+        padding: 4px 22px;
+        background: var(--paper);
+        border-bottom: 1px solid var(--line);
+      }
+      .toc button { white-space: nowrap; width: auto; min-height: 44px; padding: 8px 0; }
+      section { scroll-margin-top: 64px; }
+      h1 { font-size: clamp(36px, 12vw, 48px); }
+      h3 { font-size: 24px; }
+      .role-head { grid-template-columns: 1fr; }
+      .when { text-align: left; order: -1; }
+      .signals li { font-size: 13px; }
+      .skill-grid, .cols { grid-template-columns: 1fr; columns: 1; }
+      .role.is-current,
+      .role.is-notable { background: transparent; box-shadow: inset 2px 0 0 var(--accent); padding-left: 12px; }
+      .metrics strong { font-size: 26px; white-space: normal; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      @page { size: A4; margin: 14mm 16mm; }
+      body { background: #fff; font-size: 11.5pt; }
+      .sheet { max-width: none; padding: 0; }
+      .skip, .toc, .text-btn, .pdf-btn { display: none !important; }
+      .layout { display: block; }
+      details:not([open]) > :not(summary) { display: block !important; }
+      summary { display: none !important; }
+      a { color: inherit; text-decoration: none; }
+      h2, h3, .role-head { break-after: avoid; }
+      .points li, .skill-grid section, .langs li { break-inside: avoid; }
+      .role.is-current,
+      .role.is-notable { background: none; box-shadow: none; padding-left: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <button class="pdf-btn" type="button" id="download-pdf">Download PDF</button>
+  <div class="sheet">
+    <header class="mast">
+      <div class="mast-top">
+        <p>Curriculum vitae</p>
+        <p>Madrid, Spain</p>
+      </div>
+      <h1>Diego Álvarez de la Villa</h1>
+      <p class="roles">
+        <span>Blockchain Engineer</span>
+        <span>DeFi Protocol Architect</span>
+        <span>Smart Contract Engineer</span>
+        <span>Full-Stack Developer</span>
+      </p>
+      <ul class="contact">
+        <li><a href="mailto:avzdiego00@gmail.com">avzdiego00@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/diego-avz/" target="_blank" rel="noopener noreferrer">linkedin.com/in/diego-avz</a></li>
+        <li><a href="https://github.com/Diego-AVZ" target="_blank" rel="noopener noreferrer">github.com/Diego-AVZ</a></li>
+      </ul>
+      <ul class="metrics" aria-label="Selected record">
+        <li><strong>2022</strong><span>Blockchain<br>development</span></li>
+        <li><strong>CTO</strong><span>Sendra Labs</span></li>
+        <li><strong>Security</strong><span>Incident<br>response</span></li>
+        <li><strong>7</strong><span>EVM<br>networks</span></li>
+        <li><strong>$25K</strong><span>Arbitrum<br>grant</span></li>
+      </ul>
+    </header>
+
+    <div class="layout">
+      <nav class="toc" aria-label="Sections">
+        <button type="button" data-section="summary" class="is-active" aria-current="true">01 Summary</button>
+        <button type="button" data-section="experience">02 Experience</button>
+        <button type="button" data-section="skills">03 Skills</button>
+        <button type="button" data-section="competencies">04 Competencies</button>
+        <button type="button" data-section="languages">05 Languages</button>
+      </nav>
+
+      <main id="content">
+        <section id="summary">
+          <div class="section-head">
+            <h2><span class="idx">01</span>Professional summary</h2>
+          </div>
+          <div class="prose">
+            <p>Blockchain engineer and technical founder, with hands-on experience in smart contract engineering, DeFi protocol architecture, onchain security and full-stack development.</p>
+            <p>Experienced in designing and deploying complex smart contract systems, integrating DeFi protocols, building transaction execution infrastructure and developing full-stack applications.</p>
+            <p>Background includes technical leadership in production protocols and adversarial environments, including onchain security investigations and incident response.</p>
+            <p>Combines technical execution with system architecture, product ownership and ecosystem funding, from initial design through production operation.</p>
+          </div>
+        </section>
+
+        <section id="experience">
+          <div class="section-head">
+            <h2><span class="idx">02</span>Professional experience</h2>
+            <button class="text-btn" type="button" id="expand-roles" aria-pressed="false">Expand all</button>
+          </div>
+
+          <article class="role is-current">
+            <header class="role-head">
+              <div>
+                <h3>Sendra Labs</h3>
+                <p class="role-title">Co-Founder, CTO &amp; Lead Blockchain Engineer</p>
+              </div>
+              <p class="when">Aug 2025 — <span class="now">Present</span></p>
+            </header>
+            <p class="context">Financial infrastructure for programmable onchain strategies.</p>
+            <ul class="signals" aria-label="Highlights">
+              <li>Ground-up protocol architecture</li>
+              <li>Uniswap, GMX, Aave</li>
+              <li>Onchain accounting</li>
+              <li>Non-custodial signing</li>
+              <li>$25k Arbitrum DAO grant</li>
+              <li>Arbitrum &amp; Robinhood Chain</li>
+            </ul>
+            <details>
+              <summary>
+                <span class="when-closed">Read more</span>
+                <span class="when-open">Show less</span>
+                <span class="n">· 10 points</span>
+              </summary>
+              <ul class="points">
+                <li>Co-founded Sendra Labs and designed the protocol architecture from the ground up.</li>
+                <li>Lead the engineering and development of core smart contract modules, onchain execution logic and DeFi infrastructure.</li>
+                <li>Designed an atomic transaction execution system integrating protocols such as Uniswap, GMX and Aave.</li>
+                <li>Architected and implemented an onchain accounting framework for standardized financial position tracking and historical data.</li>
+                <li>Developed transaction orchestration systems and backend APIs generating ready-to-sign transactions.</li>
+                <li>Built full-stack systems covering smart contracts, backend services, APIs and frontend applications.</li>
+                <li>Designed non-custodial execution architectures, keeping transaction authorization and signing under user control.</li>
+                <li>Lead technical strategy, product architecture, security considerations and deployment operations.</li>
+                <li>Secured a $25,000 grant from Arbitrum DAO, managing technical milestones and ecosystem coordination.</li>
+                <li>Deployed infrastructure on Arbitrum and Robinhood Chain mainnets.</li>
+              </ul>
+            </details>
+          </article>
+
+          <article class="role">
+            <header class="role-head">
+              <div>
+                <h3>xFRACTAL</h3>
+                <p class="role-title">Full-Stack Developer · Solidity Lead</p>
+              </div>
+              <p class="when"><span class="range">Mar 2025 — Sep 2025</span><span class="mode">Remote</span></p>
+            </header>
+            <p class="context">Solana-based DeFi and AI project expanding towards EVM-compatible networks.</p>
+            <ul class="signals" aria-label="Highlights">
+              <li>Solidity lead for the EVM expansion</li>
+              <li>DEX aggregator logic</li>
+              <li>Hexagonal APIs &amp; WebSockets</li>
+              <li>Solana infrastructure</li>
+            </ul>
+            <details>
+              <summary>
+                <span class="when-closed">Read more</span>
+                <span class="when-open">Show less</span>
+                <span class="n">· 6 points</span>
+              </summary>
+              <ul class="points">
+                <li>Initially joined as Solidity Engineer, leading the design and development of smart contracts for the project's planned EVM expansion.</li>
+                <li>Worked on onchain analytics, data processing and DeFi components, including DEX aggregator logic.</li>
+                <li>Transitioned into a full-stack engineering role as the product roadmap evolved.</li>
+                <li>Designed and implemented backend APIs and WebSocket services using a hexagonal architecture approach.</li>
+                <li>Developed frontend integrations connecting the application with its core backend services.</li>
+                <li>Contributed to the architecture of a potential multi-chain system while supporting the existing Solana infrastructure.</li>
+              </ul>
+            </details>
+          </article>
+
+          <article class="role is-notable">
+            <header class="role-head">
+              <div>
+                <h3>Robin Protocol</h3>
+                <p class="role-title">Smart Contracts Engineer · Smart Contracts Lead</p>
+              </div>
+              <p class="when">Nov 2023 — Oct 2024</p>
+            </header>
+            <p class="context">Blockchain security platform focused on protecting users from wallet drainers, sweepers and malicious automated actors.</p>
+            <ul class="signals" aria-label="Highlights">
+              <li>Compromised wallets</li>
+              <li>Drainer and sweeper bots</li>
+              <li>Onchain investigation</li>
+              <li>Incident response</li>
+              <li>Asset recovery</li>
+              <li>7 EVM networks</li>
+            </ul>
+            <ul class="points">
+              <li>Investigated wallet compromises, malicious transactions and fund-draining operations through manual onchain analysis and custom detection scripts.</li>
+              <li>Analyzed behavioral patterns and transaction strategies used by sophisticated drainer and sweeper bot networks.</li>
+              <li>Participated in incident response and asset recovery operations involving compromised wallets, inaccessible protocols and compromised or unavailable frontends.</li>
+              <li>Helped affected users investigate incidents, recover access and retrieve assets, including funds locked in DeFi protocols, where technically possible.</li>
+            </ul>
+            <details>
+              <summary>
+                <span class="when-closed">Read more</span>
+                <span class="when-open">Show less</span>
+                <span class="n">· 5 points</span>
+              </summary>
+              <ul class="points">
+                <li>Led the smart contract domain and owned the development lifecycle of the protocol's onchain components.</li>
+                <li>Designed and implemented asset orchestration, user-data management, meta-transactions, liquidity flows and core protocol logic.</li>
+                <li>Worked on smart contract infrastructure operating in adversarial blockchain environments, handling complex edge cases and hostile transaction conditions.</li>
+                <li>Contributed to infrastructure deployed across 7 EVM networks, including mainnets and testnets.</li>
+                <li>Collaborated closely with experienced software engineers on protocol architecture, security and production infrastructure.</li>
+              </ul>
+            </details>
+          </article>
+
+          <article class="role">
+            <header class="role-head">
+              <div>
+                <h3>Web3Software</h3>
+                <p class="role-title">Co-Founder · Smart Contract Developer</p>
+              </div>
+              <p class="when"><span class="range">Apr 2023 — Jun 2025</span><span class="mode">Independent / Consulting</span></p>
+            </header>
+            <p class="context">Blockchain development and consulting studio.</p>
+            <ul class="signals" aria-label="Highlights">
+              <li>Co-founded the studio</li>
+              <li>NFTs through advanced DeFi</li>
+              <li>Token bridge architecture</li>
+              <li>Client delivery, end to end</li>
+            </ul>
+            <details>
+              <summary>
+                <span class="when-closed">Read more</span>
+                <span class="when-open">Show less</span>
+                <span class="n">· 5 points</span>
+              </summary>
+              <ul class="points">
+                <li>Co-founded a development studio delivering end-to-end blockchain solutions for external projects.</li>
+                <li>Designed and developed Solidity smart contracts ranging from NFT applications to advanced DeFi protocols.</li>
+                <li>Worked on multichain infrastructure, including token bridge architecture.</li>
+                <li>Managed technical architecture, implementation and client coordination throughout the development lifecycle.</li>
+                <li>Contributed to projects from initial requirements and architecture through implementation and deployment.</li>
+              </ul>
+            </details>
+          </article>
+
+          <article class="role">
+            <header class="role-head">
+              <div>
+                <h3>Multimode dApp</h3>
+                <p class="role-title">Smart Contracts Engineer · Lead Solidity Developer</p>
+              </div>
+              <p class="when">Jul 2023 — Nov 2023</p>
+            </header>
+            <p class="context">Multi-application gamified Web3 protocol.</p>
+            <ul class="signals" aria-label="Highlights">
+              <li>Principal Solidity developer</li>
+              <li>Scoring, levels, NFTs, B2B lotteries</li>
+              <li>Mainnet deployment</li>
+              <li>$5M+ volume, no reported incidents</li>
+            </ul>
+            <details>
+              <summary>
+                <span class="when-closed">Read more</span>
+                <span class="when-open">Show less</span>
+                <span class="n">· 4 points</span>
+              </summary>
+              <ul class="points">
+                <li>Served as principal Solidity developer for a decentralized, multi-application Web3 protocol.</li>
+                <li>Designed and developed the core smart contract architecture for scoring systems, levels, NFTs and modular B2B onchain lotteries.</li>
+                <li>Delivered the protocol's core onchain components and mainnet deployment.</li>
+                <li>The protocol handled over $5M in transaction volume without reported exploits or security incidents during my involvement.</li>
+              </ul>
+            </details>
+          </article>
+        </section>
+
+        <section id="skills">
+          <div class="section-head">
+            <h2><span class="idx">03</span>Technical skills</h2>
+          </div>
+          <div class="skill-grid">
+            <section>
+              <h3>Blockchain &amp; smart contract engineering</h3>
+              <ul class="plain">
+                <li>Solidity &amp; EVM Development</li>
+                <li>Smart Contract Architecture</li>
+                <li>DeFi Protocol Engineering</li>
+                <li>Protocol Integrations</li>
+                <li>Atomic Transaction Execution</li>
+                <li>Transaction Orchestration</li>
+                <li>Meta-transactions</li>
+                <li>Multichain Infrastructure</li>
+                <li>Onchain Accounting</li>
+                <li>Token &amp; Liquidity Mechanics</li>
+              </ul>
+            </section>
+            <section>
+              <h3>Blockchain security &amp; incident response</h3>
+              <ul class="plain">
+                <li>Onchain Security Investigation</li>
+                <li>Adversarial Smart Contract Environments</li>
+                <li>Drainer &amp; Sweeper Bot Analysis</li>
+                <li>Wallet Compromise Investigation</li>
+                <li>Transaction Tracing &amp; Behavioral Analysis</li>
+                <li>Incident Response</li>
+                <li>Asset Recovery Operations</li>
+                <li>Edge-case Analysis &amp; Failure Handling</li>
+              </ul>
+            </section>
+            <section>
+              <h3>Tools</h3>
+              <ul class="plain">
+                <li>Foundry</li>
+                <li>ethers.js</li>
+                <li>viem</li>
+                <li>web3.js</li>
+              </ul>
+            </section>
+            <section>
+              <h3>Programming languages</h3>
+              <ul class="plain">
+                <li>Solidity — Advanced</li>
+                <li>TypeScript — Advanced</li>
+                <li>JavaScript — Advanced</li>
+                <li>Python — Familiar</li>
+                <li>SQL — Familiar</li>
+              </ul>
+            </section>
+            <section>
+              <h3>Backend &amp; frontend</h3>
+              <ul class="plain">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Backend API Development</li>
+                <li>REST APIs</li>
+                <li>WebSocket Services</li>
+                <li>Hexagonal Architecture</li>
+                <li>Full-Stack Application Development</li>
+              </ul>
+            </section>
+            <section>
+              <h3>Engineering practices</h3>
+              <ul class="plain">
+                <li>System Architecture &amp; Technical Design</li>
+                <li>Smart Contract Testing &amp; Debugging</li>
+                <li>Production Deployment &amp; Maintenance</li>
+                <li>AI-assisted Development &amp; Agentic Coding Workflows</li>
+              </ul>
+            </section>
+          </div>
+        </section>
+
+        <section id="competencies">
+          <div class="section-head">
+            <h2><span class="idx">04</span>Core competencies</h2>
+          </div>
+          <ul class="cols">
+            <li>Technical Leadership &amp; Engineering Ownership</li>
+            <li>End-to-End Product Development</li>
+            <li>Complex Problem Solving</li>
+            <li>Security Incident Investigation</li>
+            <li>Systems Architecture &amp; Design</li>
+            <li>Cross-functional Collaboration</li>
+            <li>Technical Decision-making</li>
+            <li>Independent Research &amp; Rapid Technology Adoption</li>
+          </ul>
+        </section>
+
+        <section id="languages">
+          <div class="section-head">
+            <h2><span class="idx">05</span>Languages</h2>
+          </div>
+          <ul class="langs">
+            <li><span>Spanish</span><span>Native</span></li>
+            <li><span>English</span><span>B2 · Upper-Intermediate</span></li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <footer class="colophon">
+      <p>Diego Álvarez de la Villa · Madrid</p>
+      <p><a href="mailto:avzdiego00@gmail.com">avzdiego00@gmail.com</a></p>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      var details = Array.prototype.slice.call(document.querySelectorAll("#experience details"));
+      var button = document.getElementById("expand-roles");
+
+      function allOpen() {
+        return details.every(function (item) { return item.open; });
+      }
+
+      function sync() {
+        if (!button) return;
+        var open = allOpen();
+        button.textContent = open ? "Collapse all" : "Expand all";
+        button.setAttribute("aria-pressed", open ? "true" : "false");
+      }
+
+      if (button) {
+        button.addEventListener("click", function () {
+          var next = !allOpen();
+          details.forEach(function (item) { item.open = next; });
+          sync();
+        });
+      }
+
+      details.forEach(function (item) {
+        item.addEventListener("toggle", sync);
+      });
+
+      var pdfButton = document.getElementById("download-pdf");
+      var printSnapshot = null;
+      var printTitle = null;
+
+      function expandForPrint() {
+        var all = Array.prototype.slice.call(document.querySelectorAll("details"));
+        if (!printSnapshot) {
+          printSnapshot = all.map(function (item) { return item.open; });
+          printTitle = document.title;
+        }
+        all.forEach(function (item) { item.open = true; });
+        document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+          link.setAttribute("data-href", link.getAttribute("href"));
+          link.removeAttribute("href");
+        });
+        document.title = "Diego Alvarez de la Villa - CV";
+        sync();
+      }
+
+      function restoreAfterPrint() {
+        var all = Array.prototype.slice.call(document.querySelectorAll("details"));
+        if (printSnapshot) {
+          all.forEach(function (item, index) { item.open = !!printSnapshot[index]; });
+        }
+        printSnapshot = null;
+        if (printTitle) document.title = printTitle;
+        printTitle = null;
+        document.querySelectorAll("a[data-href]").forEach(function (link) {
+          link.setAttribute("href", link.getAttribute("data-href"));
+          link.removeAttribute("data-href");
+        });
+        sync();
+      }
+
+      window.addEventListener("beforeprint", expandForPrint);
+      window.addEventListener("afterprint", restoreAfterPrint);
+      if (pdfButton) pdfButton.addEventListener("click", function () { window.print(); });
+
+      var links = Array.prototype.slice.call(document.querySelectorAll(".toc button"));
+      links.forEach(function (link) {
+        link.addEventListener("click", function () {
+          var section = document.getElementById(link.getAttribute("data-section"));
+          if (section) section.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      });
+      if (!("IntersectionObserver" in window)) return;
+
+      var byId = {};
+      links.forEach(function (link) {
+        byId[link.getAttribute("data-section")] = link;
+      });
+
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          links.forEach(function (link) {
+            link.classList.remove("is-active");
+            link.removeAttribute("aria-current");
+          });
+          var current = byId[entry.target.id];
+          if (!current) return;
+          current.classList.add("is-active");
+          current.setAttribute("aria-current", "true");
+        });
+      }, { rootMargin: "-12% 0px -78% 0px", threshold: 0 });
+
+      Object.keys(byId).forEach(function (id) {
+        var section = document.getElementById(id);
+        if (section) observer.observe(section);
+      });
+    })();
+  </script>
+</body>
+</html>
