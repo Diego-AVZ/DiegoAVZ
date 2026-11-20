@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Diego Álvarez de la Villa — CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500&display=swap" rel="stylesheet">
+  <style>
+    @page { size: A4; margin: 11mm 13mm; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: #fff; color-scheme: light; }
+    body {
+      color: #1C1915;
+      font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+      font-size: 9.6pt;
+      line-height: 1.32;
+    }
+    h1 {
+      margin: 0;
+      font-family: Newsreader, Georgia, serif;
+      font-weight: 500;
+      font-size: 22pt;
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+    .kicker {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 0 6px;
+      padding-bottom: 4px;
+      border-bottom: 2px solid #1C1915;
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 8pt;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .roles { margin: 6px 0 0; color: #313833; }
+    .meta { margin: 3px 0 0; }
+    .meta a { color: #1E4636; text-decoration: none; }
+    .site { margin: 2px 0 8px; font-weight: 500; }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      margin: 0 0 8px;
+      padding: 6px 0;
+      border-top: 1px solid #1C1915;
+      border-bottom: 2px solid #1C1915;
+      list-style: none;
+    }
+    .metrics li { padding-right: 8px; }
+    .metrics li + li { padding-left: 8px; border-left: 1px solid #D2CDC2; }
+    .metrics strong {
+      display: block;
+      font-family: Newsreader, Georgia, serif;
+      font-size: 13pt;
+      font-weight: 500;
+      line-height: 1;
+    }
+    .metrics span { display: block; margin-top: 2px; font-size: 8pt; line-height: 1.25; }
+    h2 {
+      margin: 8px 0 3px;
+      padding-bottom: 2px;
+      border-bottom: 1px solid #1C1915;
+      font-size: 8pt;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    h3 {
+      margin: 6px 0 0;
+      font-family: Newsreader, Georgia, serif;
+      font-size: 12.5pt;
+      font-weight: 500;
+    }
+    .role { break-inside: avoid; }
+    .head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+    .title { margin: 0; font-weight: 500; }
+    .when {
+      margin: 0;
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 8pt;
+      text-align: right;
+      white-space: nowrap;
+    }
+    .context { margin: 2px 0 0; }
+    ul { margin: 2px 0 0; padding: 0; list-style: none; }
+    li { position: relative; margin: 0 0 1px; padding-left: 9px; }
+    li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 5px;
+      height: 1px;
+      background: #1C1915;
+    }
+    .notable { box-shadow: inset 2px 0 0 #1E4636; padding-left: 8px; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px 18px; }
+    .grid h3 {
+      margin: 4px 0 1px;
+      font-family: "IBM Plex Sans", sans-serif;
+      font-size: 9.2pt;
+      font-weight: 600;
+    }
+    .plain li { padding-left: 0; margin: 0; }
+    .plain li::before { display: none; }
+    .langs { margin: 2px 0 0; }
+  </style>
+</head>
+<body>
+  <p class="kicker"><span>Curriculum vitae</span><span>Madrid, Spain</span></p>
+  <h1>Diego Álvarez de la Villa</h1>
+  <p class="roles">Blockchain Engineer · DeFi Protocol Architect · Smart Contract Engineer · Full-Stack Developer</p>
+  <p class="meta">avzdiego00@gmail.com · linkedin.com/in/diego-avz · github.com/Diego-AVZ</p>
+  <p class="site"><a href="https://diego-avz.github.io/DiegoAVZ/">https://diego-avz.github.io/DiegoAVZ/</a></p>
+  <ul class="metrics">
+    <li><strong>2022</strong><span>Blockchain development</span></li>
+    <li><strong>CTO</strong><span>Sendra Labs</span></li>
+    <li><strong>Security</strong><span>Incident response</span></li>
+    <li><strong>7</strong><span>EVM networks</span></li>
+    <li><strong>$25K</strong><span>Arbitrum grant</span></li>
+  </ul>
+
+  <h2>Summary</h2>
+  <p>Blockchain engineer and technical founder. I design smart contract systems, DeFi protocol architecture and full-stack products, and I take them through production. The work includes adversarial environments, onchain investigation and incident response.</p>
+
+  <h2>Experience</h2>
+
+  <article class="role">
+    <div class="head">
+      <h3>Sendra Labs</h3>
+      <p class="when">Aug 2025 — Present<br>Co-Founder, CTO</p>
+    </div>
+    <p class="context">Programmable onchain strategies. The product is in beta, not a public launch.</p>
+    <ul>
+      <li>Designed the protocol: atomic execution across Uniswap, GMX and Aave, plus onchain accounting for positions and history.</li>
+      <li>Built contracts, orchestration APIs and the application. Transactions are ready to sign, and signing stays with the user.</li>
+      <li>Secured a $25,000 Arbitrum DAO grant. Beta deployed on Arbitrum and Robinhood Chain.</li>
+    </ul>
+  </article>
+
+  <article class="role notable">
+    <div class="head">
+      <h3>Robin Protocol</h3>
+      <p class="when">Nov 2023 — Oct 2024<br>Smart Contracts Lead</p>
+    </div>
+    <p class="context">Security platform against wallet drainers, sweepers and malicious automated actors.</p>
+    <ul>
+      <li>Investigated compromised wallets and fund-draining transactions with manual onchain analysis and custom detection scripts.</li>
+      <li>Analyzed how sophisticated drainer and sweeper bots choose transactions and move funds.</li>
+      <li>Joined incident response: recover access and assets where possible, including funds locked in DeFi protocols. Infrastructure across 7 EVM networks.</li>
+    </ul>
+  </article>
+
+  <article class="role">
+    <div class="head">
+      <h3>xFRACTAL</h3>
+      <p class="when">Mar 2025 — Sep 2025 · Remote<br>Solidity Lead, then full-stack</p>
+    </div>
+    <ul>
+      <li>Led Solidity for the planned EVM expansion, including DEX aggregator logic, then APIs, WebSockets and frontend on the existing Solana system.</li>
+    </ul>
+  </article>
+
+  <article class="role">
+    <div class="head">
+      <h3>Web3Software</h3>
+      <p class="when">Apr 2023 — Jun 2025 · Independent<br>Co-Founder</p>
+    </div>
+    <ul>
+      <li>Studio delivering Solidity from NFT applications to DeFi protocols, including token bridge architecture.</li>
+    </ul>
+  </article>
+
+  <article class="role">
+    <div class="head">
+      <h3>Multimode dApp</h3>
+      <p class="when">Jul 2023 — Nov 2023<br>Lead Solidity</p>
+    </div>
+    <ul>
+      <li>Core contracts for scoring, levels, NFTs and modular B2B lotteries, through mainnet. The protocol handled over $5M in volume during my involvement, with no reported exploits.</li>
+    </ul>
+  </article>
+
+  <h2>Skills</h2>
+  <div class="grid">
+    <section>
+      <h3>Engineering</h3>
+      <ul class="plain">
+        <li>Solidity and EVM architecture, DeFi integrations, atomic execution, onchain accounting</li>
+      </ul>
+      <h3>Security</h3>
+      <ul class="plain">
+        <li>Onchain investigation, drainer and sweeper analysis, incident response, asset recovery</li>
+      </ul>
+      <h3>Tools</h3>
+      <ul class="plain"><li>Foundry · ethers.js · viem · web3.js</li></ul>
+    </section>
+    <section>
+      <h3>Languages</h3>
+      <ul class="plain"><li>Solidity, TypeScript and JavaScript — advanced. Python and SQL — familiar.</li></ul>
+      <h3>Stack</h3>
+      <ul class="plain"><li>React, Node.js, REST, WebSockets, hexagonal APIs</li></ul>
+      <h3>Spoken</h3>
+      <ul class="plain"><li>Spanish — native. English — B2.</li></ul>
+    </section>
+  </div>
+</body>
+</html>

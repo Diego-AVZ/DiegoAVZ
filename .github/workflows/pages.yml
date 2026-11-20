@@ -25,7 +25,7 @@ jobs:
       - name: Publish site files
         run: |
           mkdir -p _site
-          cp index.html .nojekyll _site/
+          cp index.html .nojekyll Diego-Alvarez-de-la-Villa-CV.pdf Diego-Alvarez-de-la-Villa-CV-brief.pdf _site/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

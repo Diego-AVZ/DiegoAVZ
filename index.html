@@ -63,11 +63,18 @@
       padding: 36px 32px 96px;
     }
 
-    .pdf-btn {
+    .pdf-actions {
       position: fixed;
       z-index: 6;
       right: 18px;
       bottom: 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 8px;
+    }
+
+    .pdf-btn {
       border: 1px solid var(--ink);
       background: var(--paper);
       color: var(--ink);
@@ -77,6 +84,7 @@
       text-transform: uppercase;
       padding: 11px 14px;
       cursor: pointer;
+      text-decoration: none;
     }
 
     .pdf-btn:hover {
@@ -514,11 +522,11 @@
     }
 
     @media (max-width: 800px) {
-      .pdf-btn {
+      .pdf-actions {
         position: static;
-        display: block;
-        width: max-content;
-        margin: 12px 18px 0 auto;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 12px 18px 0;
       }
       .sheet { padding: 8px 18px 36px; }
       .layout { display: block; margin-top: 22px; }
@@ -570,7 +578,10 @@
 </head>
 <body>
   <a class="skip" href="#content">Skip to content</a>
-  <button class="pdf-btn" type="button" id="download-pdf">Download PDF</button>
+  <div class="pdf-actions">
+    <a class="pdf-btn" href="Diego-Alvarez-de-la-Villa-CV.pdf" download="Diego-Alvarez-de-la-Villa-CV.pdf">Full CV</a>
+    <a class="pdf-btn" href="Diego-Alvarez-de-la-Villa-CV-brief.pdf" download="Diego-Alvarez-de-la-Villa-CV-brief.pdf">Short CV</a>
+  </div>
   <div class="sheet">
     <header class="mast">
       <div class="mast-top">
@@ -634,11 +645,10 @@
               </div>
               <p class="when">Aug 2025 — <span class="now">Present</span></p>
             </header>
-            <p class="context">Financial infrastructure for programmable onchain strategies.</p>
+            <p class="context">Financial infrastructure for programmable onchain strategies. The product is in beta, not a public launch.</p>
             <ul class="signals" aria-label="Highlights">
-              <li>Ground-up protocol architecture</li>
+              <li>In beta</li>
               <li>Uniswap, GMX, Aave</li>
-              <li>Onchain accounting</li>
               <li>Non-custodial signing</li>
               <li>$25k Arbitrum DAO grant</li>
               <li>Arbitrum &amp; Robinhood Chain</li>
@@ -647,19 +657,13 @@
               <summary>
                 <span class="when-closed">Read more</span>
                 <span class="when-open">Show less</span>
-                <span class="n">· 10 points</span>
+                <span class="n">· 4 points</span>
               </summary>
               <ul class="points">
-                <li>Co-founded Sendra Labs and designed the protocol architecture from the ground up.</li>
-                <li>Lead the engineering and development of core smart contract modules, onchain execution logic and DeFi infrastructure.</li>
-                <li>Designed an atomic transaction execution system integrating protocols such as Uniswap, GMX and Aave.</li>
-                <li>Architected and implemented an onchain accounting framework for standardized financial position tracking and historical data.</li>
-                <li>Developed transaction orchestration systems and backend APIs generating ready-to-sign transactions.</li>
-                <li>Built full-stack systems covering smart contracts, backend services, APIs and frontend applications.</li>
-                <li>Designed non-custodial execution architectures, keeping transaction authorization and signing under user control.</li>
-                <li>Lead technical strategy, product architecture, security considerations and deployment operations.</li>
-                <li>Secured a $25,000 grant from Arbitrum DAO, managing technical milestones and ecosystem coordination.</li>
-                <li>Deployed infrastructure on Arbitrum and Robinhood Chain mainnets.</li>
+                <li>Co-founded Sendra Labs and designed the protocol architecture. The product is in beta, not a public launch.</li>
+                <li>Designed atomic execution across Uniswap, GMX and Aave, with an onchain accounting framework for position tracking and historical data.</li>
+                <li>Built the path from smart contracts to orchestration APIs and the application. Transactions are ready to sign, and signing stays with the user.</li>
+                <li>Secured a $25,000 Arbitrum DAO grant and deployed the beta on Arbitrum and Robinhood Chain mainnets.</li>
               </ul>
             </details>
           </article>
@@ -779,7 +783,7 @@
               <li>Principal Solidity developer</li>
               <li>Scoring, levels, NFTs, B2B lotteries</li>
               <li>Mainnet deployment</li>
-              <li>$5M+ volume, no reported incidents</li>
+              <li>$5M+ protocol volume during my involvement</li>
             </ul>
             <details>
               <summary>

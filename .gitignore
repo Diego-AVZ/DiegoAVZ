@@ -1,4 +1,7 @@
 .DS_Store
 Thumbs.db
 Desktop.ini
+serve.js
 *.pdf
+!Diego-Alvarez-de-la-Villa-CV.pdf
+!Diego-Alvarez-de-la-Villa-CV-brief.pdf
