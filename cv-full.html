@@ -98,7 +98,7 @@
   <h1>Diego Álvarez de la Villa</h1>
   <p class="roles">Blockchain Engineer · DeFi Protocol Architect · Smart Contract Engineer · Full-Stack Developer</p>
   <p class="stance">Smart contracts since 2022 · Technical founder · Security &amp; incident response</p>
-  <p class="meta">avzdiego00@gmail.com · linkedin.com/in/diego-avz · github.com/Diego-AVZ</p>
+  <p class="meta">avzdiego00@gmail.com · linkedin.com/in/diego-avz · github.com/Diego-AVZ · <a href="https://xdevenv.sendralabs.com/">xdevenv.sendralabs.com</a></p>
   <p class="site"><a href="https://diego-avz.github.io/DiegoAVZ/">https://diego-avz.github.io/DiegoAVZ/</a></p>
 
   <h2>Professional summary</h2>
@@ -116,14 +116,14 @@
       </div>
       <p class="when">Aug 2025 — Present</p>
     </div>
-    <p class="context">Operating layer for onchain capital: rule-programmable financial infrastructure (SRPE). Products are in beta, not a public launch.</p>
+    <p class="context">Financial infrastructure for programmable onchain strategies. Closed beta on mainnet, not a public launch.</p>
     <ul>
-      <li>Co-founded Sendra Labs and designed the Sendra Rule-Programmable Environment (SRPE), the infrastructure products are deployed into. Products are in beta, not a public launch.</li>
-      <li>SRPE enforces access, risk limits, permissions, timing and settlement in contracts before any product logic runs. Violations revert, so operators cannot move capital outside the agreed rules.</li>
-      <li>Built LP Credit Enclaves, the first rule-programmable product: lenders allocate USDC into rule-bound environments where Uniswap operators deploy capital without unrestricted control.</li>
-      <li>Built Sendra Pulse and a standardized accounting layer so atomic execution becomes comparable onchain history and a reputation record other products can read.</li>
-      <li>Atomic execution across Uniswap, GMX and Aave, plus the sendra-tx-builder API for ready-to-sign transactions used by the application, bots and agents. Signing stays with the user.</li>
-      <li>Secured a $25,000 Arbitrum DAO grant. Infrastructure deployed on Arbitrum and Robinhood Chain mainnets.</li>
+      <li>Co-founded Sendra Labs and designed the four-layer stack: atomic execution, a unified financial record, Sendra Pulse accumulators, and SRPE. Closed beta on mainnet, not a public launch.</li>
+      <li>Each strategy is calculated, prepared and executed in one transaction. That same transaction writes the position (open or closed, PnL, history) and updates Pulse, so another product can read the record and enforce rules on it.</li>
+      <li>Credit Enclaves is the first product on SRPE. A capital provider supplies USDC and sets duration, profit split, allowed assets, collateral and max drawdown. The operator posts collateral and can only run approved Uniswap v3/v4 LP, spot and Aave strategies. The contract holds the capital, returns principal, applies the split, and blocks anything outside the rules. Sendra enforces rules, accounting and Pulse; it does not take the strategy risk.</li>
+      <li>Built the operator applications on that stack: Axis (spot), Liquidity (Uniswap v3/v4), Lending (Aave supply, loop, short, borrow-to-LP) and Pairs, plus the Transaction Builder API that returns ready-to-sign calls. Signing stays with the user.</li>
+      <li>Designed Pulse sync through the multichain engine: accumulator snapshots (capital, exposure, realized PnL, drawdown, wins and losses) can be sealed and read on another network, currently Arbitrum and Robinhood Chain mainnets.</li>
+      <li>Secured a $25,000 Arbitrum DAO grant (March 2026). Core contracts, Pulse, SRPE and the Transaction Builder are in mainnet beta, pre-audit.</li>
     </ul>
   </article>
 
